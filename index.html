@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<script type="javascript">
+    function unhide() {
+        alert('hello');
+        document.getElementById("hiddendiv").visible=true;
+    }
+    function hide() {
+        document.getElementById("hiddendiv").visible=false;
+    }
+</script>
+<body>
+    <div id="container">
+        <h1 style="">Login please</h1>
+        <form name="actionForm" action="#">
+            <div style="width:400px;">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" id="username" value="Arun">
+                </div>
+                <br>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <br>
+                <div>
+                    <label>Gender </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="unknown" name="gender" value="unknown">
+                    <label for="unknown">Won't Say</label>
+                </div>
+                <br>
+                <div>
+                    <label>Hobbies </label>
+                    <input type="checkbox" value="Music" id="music" name="hobbies">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="dance" value="Dance" name="hobbies">
+                    <label for="dance">Dance</label>
+                    <input type="checkbox" id="other" value="Other" name="hobbies">
+                    <label for="other">Other</label>
+                </div>
+                <br>
+                <div>
+                    Link that does not work : <a href="http://www.google.com" id="notworkinglink" target="_blank">link</a>
+                </div>
+                <br>
+                <div>
+                    <label>Magic </label>
+                    <button type="button" id="unhide" name="unhide" onclick="document.getElementById('hiddendiv').style.visibility='visible'">Unhide</button>
+                    <button type="button" id="hide" name="hide" onclick="document.getElementById('hiddendiv').style.visibility='hidden'">Hide</button>
+                </div>
+                <div id="hiddendiv" style="visibility:hidden">
+                    <h2>Do you see me</h2>
+                </div>
+                <div>
+                    <label>Image</label>
+                    <input type="image" src="" alt="NA">
+                </div>
+                <br>
+                <div>
+                    <label>Fruits</label>
+                    <ul id="fruits" >
+                        <li id="orange">Orange</li>
+                        <li id="apple">Apple</li>
+                        <li id="kiwi">Kiwi</li>
+                        <li id="banana">Banana</li>
+                    </ul>
+                </div>
+                <div>
+                      <label for="cars">Choose a car:</label>
+                      <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>newFrame
+                      </select>
+                </div>
+                <br>
+            </div>
+			<div>
+				<iframe name="myFrame" id="newFrame" src="child.html" title="W3Schools Free Online Web Tutorials"/>
+			</div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
